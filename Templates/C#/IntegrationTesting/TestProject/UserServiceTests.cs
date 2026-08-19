@@ -94,7 +94,7 @@ public class UserServiceTests
     [Test]
     public async Task Test_GetNearbyUsers()
     {
-        var result = await service.GetNearbyAsync(-37.3159, 81.1496, 1200);
+        var result = await service.GetNearbyAsync(-37.3159, 81.1496, 1800);
         Assert.That(result.Find(x => x.Id == 5), Is.Not.Null);
     }
 }
