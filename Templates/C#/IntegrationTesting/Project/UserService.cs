@@ -29,7 +29,7 @@ public class UserService(IJsonPlaceholderClient jsonPlaceholderClient) : IUserSe
         var allUsers = JsonSerializer.Deserialize<List<AddressUser>>(content, options) ?? [];
         return [.. allUsers.Where(user =>
             user.Address?.Geo != null &&
-            DistanceUtils.CalculateDistance(lat, lng, user.Address.Geo.Lat, user.Address.Geo.Lng) <= miles
+            DistanceUtils.CalculateDistance(lat, lng, double.Parse(user.Address.Geo.Lat), double.Parse(user.Address.Geo.Lng)) <= miles
         )];
     }
 }
