@@ -20,4 +20,4 @@ record Address(String street, String suite, String city, String zipcode, Optiona
 
 record Company(String name, String catchPhrase, String bs) {}
 
-record Geo(double lat, double lng) {}
+record Geo(String lat, String lng) {}

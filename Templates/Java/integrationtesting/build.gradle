@@ -30,6 +30,8 @@ dependencies {
 
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	testImplementation 'org.wiremock:wiremock-standalone:3.10.0'
 }
 
 tasks.named('test') {

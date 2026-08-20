@@ -42,7 +42,7 @@ public class UserServiceImpl implements UserService {
         var allUsers = mapper.convertValue(json, new TypeReference<List<AddressUser>>() {});
         return allUsers.stream().filter(user ->
             user.address().geo().isPresent() &&
-            DistanceUtils.calculateDistance(lat, lng, user.address().geo().get().lat(), user.address().geo().get().lng()) <= miles
+            DistanceUtils.calculateDistance(lat, lng, Double.parseDouble(user.address().geo().get().lat()), Double.parseDouble(user.address().geo().get().lng())) <= miles
         ).toList();
     }
 }
