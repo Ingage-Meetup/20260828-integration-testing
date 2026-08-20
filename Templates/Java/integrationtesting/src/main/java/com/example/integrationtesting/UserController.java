@@ -28,7 +28,7 @@ public class UserController {
     }
     
     @GetMapping("/users/nearby")
-    public List<AddressUser> getNearby(@RequestParam double lat, @RequestParam double lng, @RequestParam double miles) {
+    public List<AddressUser> getNearby(@RequestParam("lat") double lat, @RequestParam("lng") double lng, @RequestParam("miles") double miles) {
         return userService.getNearby(lat, lng, miles);
     }
 }
