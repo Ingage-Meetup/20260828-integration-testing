@@ -10,7 +10,7 @@ public static class DistanceUtils
             throw new ArgumentOutOfRangeException("Latitude must be between -90 and 90, longitude between -180 and 180.");
         }
 
-        const double R = 6371.0; // Earth's radius in kilometers
+        const double R = 3963.19; // Earth's radius in miles
         double dLat = ToRadians(lat2 - lat1);
         double dLon = ToRadians(lon2 - lon1);
 
@@ -19,7 +19,7 @@ public static class DistanceUtils
                    Math.Pow(Math.Sin(dLon / 2), 2);
 
         double c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
-        return R * c; // Distance in kilometers
+        return R * c; // Distance in miles
     }
 
     private static double ToRadians(double degrees) => degrees * Math.PI / 180.0;
