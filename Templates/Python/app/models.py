@@ -8,8 +8,8 @@ class Company(BaseModel):
 
 class Geo(BaseModel):
     model_config = ConfigDict(strict=True)
-    lat: float
-    lng: float
+    lat: str
+    lng: str
 
 class Address(BaseModel):
     street: str

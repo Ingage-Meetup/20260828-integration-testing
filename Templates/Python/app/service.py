@@ -26,4 +26,4 @@ class UserService:
         content = await self.client.get_async("/users")
         data = json.loads(content)
         users = [AddressUser(**item) for item in data]
-        return [u for u in users if calculateDistance(lat, lng, u.address.geo.lat, u.address.geo.lng) <= miles]
+        return [u for u in users if calculateDistance(lat, lng, float(u.address.geo.lat), float(u.address.geo.lng)) <= miles]

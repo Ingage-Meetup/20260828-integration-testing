@@ -19,8 +19,8 @@ class TestUserService(unittest.IsolatedAsyncioTestCase):
                         "city": "Nowhere",
                         "zipcode": "00000",
                         "geo": {
-                            "lat": -37.3159,
-                            "lng": 81.1496
+                            "lat": "-37.3159",
+                            "lng": "81.1496"
                         }
                     },
                     "phone": "555-0101",
@@ -42,8 +42,8 @@ class TestUserService(unittest.IsolatedAsyncioTestCase):
                         "city": "Somewhere",
                         "zipcode": "11111",
                         "geo": {
-                            "lat": -31.8129,
-                            "lng": 62.5342
+                            "lat": "-31.8129",
+                            "lng": "62.5342"
                         }
                     },
                     "phone": "555-0102",
@@ -65,8 +65,8 @@ class TestUserService(unittest.IsolatedAsyncioTestCase):
                         "city": "Elsewhere",
                         "zipcode": "22222",
                         "geo": {
-                            "lat": -43.9509,
-                            "lng": -34.4618
+                            "lat": "-43.9509",
+                            "lng": "-34.4618"
                         }
                     },
                     "phone": "555-0103",
