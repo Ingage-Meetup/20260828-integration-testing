@@ -1,27 +1,24 @@
-from pydantic.dataclasses import dataclass
+from pydantic import BaseModel, ConfigDict
 from typing import Optional
 
-@dataclass(frozen=True)
-class Company:
+class Company(BaseModel):
     name: str
     catch_phrase: Optional[str] = None
     bs: Optional[str] = None
 
-@dataclass(frozen=True)
-class Geo:
+class Geo(BaseModel):
+    model_config = ConfigDict(strict=True)
     lat: float
     lng: float
 
-@dataclass(frozen=True)
-class Address:
+class Address(BaseModel):
     street: str
     suite: str
     city: str
     zipcode: str
     geo: Optional[Geo] = None
 
-@dataclass(frozen=True)
-class BaseUser:
+class BaseUser(BaseModel):
     id: int
     name: str
     username: str
@@ -30,6 +27,5 @@ class BaseUser:
     website: str
     company: Company
 
-@dataclass(frozen=True)
 class AddressUser(BaseUser):
     address: Address
