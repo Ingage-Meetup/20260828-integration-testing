@@ -1,3 +1,4 @@
+import os
 import httpx
 from typing import Any, Dict, Optional, Union
 
@@ -6,7 +7,7 @@ class JsonPlaceholderClient:
 
     def __init__(self) -> None:
         """Initializes the client and cleans trailing slashes from the base URL."""
-        self.base_url: str = 'https://jsonplaceholder.typicode.com'
+        self.base_url: str = os.environ.get("URL", "https://jsonplaceholder.typicode.com")
 
     async def get_async(
         self,

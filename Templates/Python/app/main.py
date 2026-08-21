@@ -5,6 +5,10 @@ from app.service import UserService
 
 app = FastAPI()
 
+@app.get("/")
+def health():
+    return "OK"
+
 @app.get('/users')
 async def get_users(service: Annotated[UserService, Depends()]):
     return await service.get_all_async()
