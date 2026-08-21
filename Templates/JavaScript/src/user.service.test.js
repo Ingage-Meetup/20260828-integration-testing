@@ -14,7 +14,7 @@ const sampleUsers = `[
 			"suite": "Apt 1",
 			"city": "Nowhere",
 			"zipcode": "00000",
-			"geo": { "lat": -37.3159, "lng": 81.1496 }
+			"geo": { "lat": "-37.3159", "lng": "81.1496" }
 		}
 	},
 	{
@@ -27,7 +27,7 @@ const sampleUsers = `[
 			"suite": "",
 			"city": "Somewhere",
 			"zipcode": "11111",
-			"geo": { "lat": -31.8129, "lng": 62.5342 }
+			"geo": { "lat": "-31.8129", "lng": "62.5342" }
 		}
 	},
 	{
@@ -40,7 +40,7 @@ const sampleUsers = `[
 			"suite": "",
 			"city": "Elsewhere",
 			"zipcode": "22222",
-			"geo": { "lat": -43.9509, "lng": -34.4618 }
+			"geo": { "lat": "-43.9509", "lng": "-34.4618" }
 		}
 	}
 ]`;

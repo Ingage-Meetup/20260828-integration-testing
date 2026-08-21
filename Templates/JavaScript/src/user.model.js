@@ -27,8 +27,8 @@
 
 /**
  * @typedef {Object} Geo
- * @property {number} lat
- * @property {number} lng
+ * @property {string} lat
+ * @property {string} lng
  */
 
 /**

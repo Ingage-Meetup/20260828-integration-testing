@@ -52,7 +52,7 @@ export class UserService {
                 return false;
             }
 
-            const distance = calculateDistance(lat, lng, geo.lat.toFixed(3), geo.lng.toFixed(3));
+            const distance = calculateDistance(lat, lng, Number(geo.lat).toFixed(3), Number(geo.lng).toFixed(3));
             return distance <= miles;
         });
     }
