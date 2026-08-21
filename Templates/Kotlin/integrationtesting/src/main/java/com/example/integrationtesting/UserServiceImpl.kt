@@ -44,8 +44,8 @@ internal class UserServiceImpl(private val client: JsonPlaceholderClient) : User
                     calculateDistance(
                         lat,
                         lng,
-                        user.address.geo.get().lat,
-                        user.address.geo.get().lng
+                        user.address.geo.get().lat.toDouble(),
+                        user.address.geo.get().lng.toDouble()
                     ) <= miles
         }.toList()
     }

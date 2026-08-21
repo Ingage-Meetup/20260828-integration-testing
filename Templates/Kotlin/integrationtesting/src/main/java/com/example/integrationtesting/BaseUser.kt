@@ -38,4 +38,4 @@ data class Address(
 data class Company(val name: String?, val catchPhrase: String?, val bs: String?)
 
 @JvmRecord
-data class Geo(@JvmField val lat: Double, @JvmField val lng: Double)
+data class Geo(@JvmField val lat: String, @JvmField val lng: String)
