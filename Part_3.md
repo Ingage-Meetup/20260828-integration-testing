@@ -1,9 +1,4 @@
 # Integration Testing - Part 3
 
-I designed this exercise intentionally to show an issue where the API contract is, for *whatever* reason, misunderstood.
-
-One area that this can be detected is in integration testing.
-
-There are many ways to do it, and it can be difficult, but sometimes it is worth it. 
-
-What was your solution?
+- Please checkout the `solutions` branch and compare your solution against mine! I'd like to see how other people did it!
+- Please look at how this is implemented in the other language as well! 

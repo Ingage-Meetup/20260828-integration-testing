@@ -1,16 +1,17 @@
 # Integration Testing - Part 1
 
-## Users application
+## Unit Testing
 
-This API is for getting user data.
+Your first task is to:  
 
-One of the endpoints gets all users, one of the endpoints gets a single user, and one of them gets users based on proximity to a lat/lon coordinate.
+1. Implement the Haversine Distance formula 
+2. Write unit tests for it. There is a basic unit test there already. It's not important to be precisely exact. Your particular implementation might get in the ballpark.
 
-## Task
+### Notes
 
-Your task is to:
-1. Implement the Distance calculation using the Haversine formula 
-2. Write unit tests for it.
+- This kata is **NOT** about refining your geo-mathematical skills.  
+- Feel free to use AI to implement it, or to copy/paste a formula from somewhere.  
 
-When you're ready, you can go to the next part.
- 
+## Next
+
+- When you're ready, you can go to the next part.
