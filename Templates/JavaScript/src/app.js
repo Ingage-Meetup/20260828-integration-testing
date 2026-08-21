@@ -5,10 +5,14 @@ import {UserService} from './user.service.js';
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-const client = new JsonPlaceholderClient('https://jsonplaceholder.typicode.com');
+const client = new JsonPlaceholderClient(process.env.URL);
 const userService = new UserService(client);
 
 app.use(json());
+
+app.get('/', async (req, res) => {
+    res.json({});
+});
 
 app.get('/users', async (req, res) => {
     try {

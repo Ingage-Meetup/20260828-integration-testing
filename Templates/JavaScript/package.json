@@ -8,5 +8,22 @@
   "license": "BSD-3-Clause",
   "dependencies": {
     "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5",
+    "start-server-and-test": "^3.0.12",
+    "wiremock": "^3.13.2"
+  },
+  "scripts": {
+    "prod": "node --env-file .env.production ./src/app.js",
+    "integration-test": "start-server-and-test start-servers \"http://127.0.0.1:9080|http://127.0.0.1:8080\" test",
+
+
+
+    "preintegration-test-record": "npx kill-port 9080 8080",
+    "wiremock": "wiremock --root-dir ./wiremock --port 9080 --proxy-all=\"https://jsonplaceholder.typicode.com\" --record-mappings",
+    "app": "node --env-file=.env.test ./src/app.js",
+    "start-servers": "concurrently \"npm run wiremock\" \"npm run app\"",
+    "test": "node --test"
   }
 }
