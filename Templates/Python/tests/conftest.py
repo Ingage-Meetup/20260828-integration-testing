@@ -30,7 +30,8 @@ def servers():
             "java", "-jar", JAR,
             "--port", str(WIREMOCK_PORT),
             "--root-dir", str(WIREMOCK_DIR),
-            "--proxy-all", "https://jsonplaceholder.typicode.com"
+            "--proxy-all", "https://jsonplaceholder.typicode.com",
+            "--record-mappings"
         ]
     )
     app = subprocess.Popen(
