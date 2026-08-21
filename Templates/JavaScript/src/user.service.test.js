@@ -64,8 +64,6 @@ beforeEach(() => {
 
 test('test_getNearbyUsers - should find Alice within radius', async () => {
     const result = await service.getNearbyAsync(-37.3159, 81.1496, 1800);
-
-    // Array.prototype.some() mirrors LINQ's .Any() extension method
     const hasAlice = result.some(user => user.id === 1);
 
     strictEqual(hasAlice, true);
