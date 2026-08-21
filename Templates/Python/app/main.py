@@ -15,4 +15,4 @@ async def get_user(id: int, service: Annotated[UserService, Depends()]):
 
 @app.get('/users/nearby')
 async def get_users_neraby(service: Annotated[UserService, Depends()], lat: float, lng: float, miles: float | None = None):
-    return await service.get_nearby_async()
+    return await service.get_nearby_async(lat, lng, miles)
