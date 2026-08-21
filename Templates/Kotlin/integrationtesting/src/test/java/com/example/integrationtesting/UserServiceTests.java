@@ -3,6 +3,7 @@ package com.example.integrationtesting;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.when;
 
+import java.util.Objects;
 import java.util.Optional;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -95,14 +96,15 @@ public class UserServiceTests {
 
     @BeforeEach
     public void setUp() {
-        when(client.get("/users", Optional.empty())).thenReturn(sampleUsers);
+        when(client.get("/users", null)).thenReturn(sampleUsers);
         service = new UserServiceImpl(client);
     }
 
     @Test
     public void test_getNearbyUsers() {
         var result = service.getNearby(-37.3159, 81.1496, 1800);
-        assertTrue(result.stream().anyMatch(x -> x.id == 1));
+        assert result != null;
+        assertTrue(result.stream().filter(Objects::nonNull).anyMatch(x -> x.id == 1));
     }
 
 }
