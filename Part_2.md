@@ -1,18 +1,19 @@
 # Integration Testing - Part 2
 
-## Runtime Exception
+## Manual Test
 
-- If you run the application and test the `/nearBy` API, you should get an exception even though your unit tests pass.
+- If you haven't already, run the application and test the `/users/nearBy` API.
+- You should get an exception even though your unit tests pass.
 - **Why?**
-- Because the stub in the unit tests doesn't accurately model the response from the downstream API, `https://jsonplaceholder.typicode.com`.
+- Because the stub in the unit tests doesn't accurately model the response from the `https://jsonplaceholder.typicode.com` API.
 
 ## Integration Testing
 
-1. Write integration tests again the downstream API `https://jsonplaceholder.typicode.com`
-2. Bonus points if your integration test works in an offline mode. (Record/Reply functionality.... I advise wiremock, but I'm open to other ideas!!)
+Your next task:
 
-## Notes
+**Write integration tests again the `https://jsonplaceholder.typicode.com` API.**
 
+- Bonus points if your integration test works in an offline mode.
 - Use AI and other supporting resources as much as you like!
 - _... For your information; yes, I _did_ write the code in a somewhat odd manner to tee-up this kata._ 
 
