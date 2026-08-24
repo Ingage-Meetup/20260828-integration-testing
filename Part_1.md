@@ -2,10 +2,13 @@
 
 ## Unit Testing
 
-Your first task is to:  
+Your task is to:  
 
-1. Implement the Haversine Distance formula 
-2. Write unit tests for it. There is a basic unit test there already. It's not important to be precisely exact. Your particular implementation might get in the ballpark.
+**Implement the Haversine Distance formula.**
+
+- Write unit tests for it.
+- There is a basic unit test there already.
+- It's not important to be precisely exact. Your particular implementation might get in the ballpark.
 
 ### Notes
 
