@@ -12,7 +12,7 @@
 
 ## *Bonus* Discussion Topics
 
-- I had to write some hacky/silly code to trigger the issue. Could you tell there was going to be an issue, just by looking at the code, before you even ran it? (Could AI tell?) 
-- Even for some of the hackiness/silliness, was it completely unrealistic? Still possible to see in a production application, right?
 - Have you ever run into issues like this before, where the API contract asn't honored, or was for some reason misunderstood?
-- If you got a chance to look at more than one language; which languages are more vulnerable to this issue?
+- As developers, what do we do more of? Which is more important? Which is harder?
+    - Implementing technical formulas?
+    - Or integrating with APIs?

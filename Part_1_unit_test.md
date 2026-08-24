@@ -2,11 +2,11 @@
 
 ## Unit Testing
 
-Your task is to **write unit tests for the Haversine Distance formula**
+Your task is to **write unit tests for the Haversine Distance formula**.
 
 - There is a basic unit test there already.
 - Mainly think about the happy path.
-- Consider egde cases.
+- Consider edge cases.
 
 ## Next
 
