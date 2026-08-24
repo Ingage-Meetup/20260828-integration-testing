@@ -1,4 +1,4 @@
-# Integration Testing - Part 3
+# Integration Testing - Part 5
 
 - Please checkout the `solutions` branch and compare your solution against mine! I'd like to see how other people did it!
 - Please look at how this is implemented in the other language as well! 
@@ -6,4 +6,4 @@
 
 ## Next
 
-- Part 4 is the group discussion, things I think we'll discuss.
+- The next part is the group discussion, things I think we'll discuss.
